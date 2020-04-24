@@ -95,3 +95,10 @@ The following things are NOT useful. No points are awarded for things like:
 1. Positive comments like "Awesome!" or "Great job!" or "I like this!"
 1. Harrassing, abusive or sarcastic comments (these could disqualify you and possibly get you banned)
 1. Other comments that are not useful to the author.
+
+
+# You don't have to finish OR win
+
+Remember: learning is the main reward here. Competing is fun and encouraged, but optional. Even finishing your project is not necessarily important! The point here is to learn.
+
+If you'd like to seriously compete, though, then keep in mind that more complex and interesting applications will stand a better chance of winning.

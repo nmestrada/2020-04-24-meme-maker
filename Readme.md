@@ -1,4 +1,4 @@
-# Today's Objective: Noisemaker!
+# Today's Objective: Meme maker!
 
 ## Prize
 
@@ -8,49 +8,43 @@ Tip: Read the [General Information Document](General%20Information.md) for more 
 
 ## Objective
 
-Today's objective is to create a music instrument, audio toy, or noisemaker.
+Today's objective is to create a meme maker with captions in the browser.
 
-Over the years, audio has fallen out of favour for mainstream web applications and websites for a variety of reasons, including accessibility, design, and user experience. 
+There are tons of meme makers online, with a variety of features. Here are a few:
 
-But rich, interactive web experiences still make full use of Audio APIs. Audio has been a part of browser experiences for decades.
+* https://imgflip.com/memegenerator
+* https://www.kapwing.com/meme-maker
+* https://makeameme.org/
 
-Here are some cool examples of the Web Audio API in action.
-
-* https://keithwhor.com/music/
-* https://stuartmemo.com/qwerty-hancock/
-* https://stuartmemo.com/smashing-magazine/theremin/
+Today we will build a meme-maker that is browser-only and does not require any backend server.
 
 ## Requirements
 
-Use the Web Audio API (or a library that wraps around it) to make a musical instrument, audio toy, or a noisemaker.
+Using `svg` elements, create a meme maker that can be converted to an image in-browser. 
 
-The only hard requirement are these: 
-1. Sound must be made in response to user interaction. I.e., you cannot create a simple audio player. Your app must respond to user action events.
-2. You must use the Web Audio API, either directly or indirectly.
+The meme maker should let you type text on an image and then convert it to a PNG image. The user can then copy or save the image off the page directly using their right-click menu.
 
-The requirements are intentionally open-ended to allow developers to create an app that suits their skill level.
+### What is SVG and canvas?
 
-Here are some examples of applications you might decide to make:
+SVG elements in the browser are used extensively by rich media applications. The SVG markup language is intended to be human as well as computer readable, i.e. it is NOT a binary format. 
 
-* (Easy  ) A button that creates a sound when the user clicks on it
-* (Easy  ) An area that creates noise as the user drags their mouse over it (see [Theremin](https://stuartmemo.com/smashing-magazine/theremin/))
-* (Medium) A simple synthesizer
-* (Hard  ) A drum machine
-* (Hard  ) A simple game with interesting audio sound effects
+You've already used svg inadvertently if you have ever imported an SVG image. For example, Create React App's logo is an SVG image.
 
-## If you want to win
+### Suggested pattern that you might want to use
 
-Remember: learning is the main reward here. Competing is fun and encouraged, but optional.
+Step 1: The meme builder should be built using SVG elements. (Take your time learning this from [MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/image), it's fun and useful)
+Step 2: Make sure you wrap your SVG with a contenteditable div.
+Step 3: Convert the SVG to Canvas, where you can then download the canvas.
 
-However, if you'd like to seriously compete, then keep in mind that more complex and interesting applications will stand a better chance of winning.
+This fiddle is a good example: https://jsfiddle.net/pcLrydh5/
 
 ### Suggested Libraries
 
-[ToneJS](https://github.com/Tonejs/Tone.js/) is a pretty good library that you can use. There are others, but this is one of the simpler ones.
+No suggested libraries this time. The project is very simple with `svg` and can be completed with vanilla JS.
 
 ## Frameworks:
 
-We recommend you keep it simple and use what you already know. It is completely possible to build this using jQuery. You can use React, Vue, Angular if you wish.
+We recommend you keep it simple and use what you already know. It is completely possible to build this using vanilla JS. You can use React, Vue, Angular if you wish.
 
 ## Technology Restrictions
 
