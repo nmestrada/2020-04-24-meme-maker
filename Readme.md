@@ -32,7 +32,7 @@ You've already used svg inadvertently if you have ever imported an SVG image. Fo
 
 ### Suggested pattern that you might want to use
 
-Step 1: The meme builder should be built using SVG elements. (Take your time learning this from [MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/image), it's fun and useful)
+Step 1: The meme builder should be built using SVG elements. (Take your time learning this from [MDN](https://developer.mozilla.org/en-US/docs/Web/SVG), it's fun and useful)
 Step 2: Make sure you wrap your SVG with a contenteditable div.
 Step 3: Convert the SVG to Canvas, where you can then download the canvas.
 
