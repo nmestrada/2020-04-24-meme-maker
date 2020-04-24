@@ -1,18 +1,46 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld msg="Meme Maker 2020"/>
+    <ImageUpload v-model="file"/>
+     <p v-if="file">{{file.name}}</p>
+    <div contenteditable="true">
+        <svg height="100">
+            <rect width="40" height="50" style="fill:blue;" />
+            <rect width="20" height="80" style="fill:red;" />
+            <circle r="20" cx="50" cy="50" style="fill:yellow;" />
+        </svg>
+    </div>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import ImageUpload from './components/ImageUpload.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    HelloWorld,
+    ImageUpload
+  },
+  data() {
+    return {
+      file: null
+    }
+  },
+  computed: {
+     loadFile: function() {
+        //const preview = document.querySelector('img');
+        const reader = new FileReader();
+
+        // reader.addEventListener("load", function () {
+        //     // convert image file to base64 string
+        //     preview.src = reader.result;
+        // }, false);
+
+        return this.file? reader.readAsDataURL(this.file):this.file ;
+    }
+    }
 }
 </script>
 
