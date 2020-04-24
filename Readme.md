@@ -24,7 +24,7 @@ Using `svg` elements, create a meme maker that can be converted to an image in-b
 
 The meme maker should let you type text on an image and then convert it to a PNG image. The user can then copy or save the image off the page directly using their right-click menu.
 
-### What is SVG and canvas?
+### What is SVG?
 
 SVG elements in the browser are used extensively by rich media applications. The SVG markup language is intended to be human as well as computer readable, i.e. it is NOT a binary format. 
 
